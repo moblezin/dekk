@@ -13,7 +13,7 @@
         
         low_layer {
             bindings = <
-                &K_CONTEXT_MENU     &UP_ARROW     &DOWN_ARROW     &trans
+                &K_CONTEXT_MENU     &kp UP_ARROW     &kp DOWN_ARROW     &trans
             >;
         };
     };
