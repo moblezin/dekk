@@ -33,9 +33,9 @@
                     <&pro_micro 19 (GPIO_ACTIVE_HIGH)>,
                     <&pro_micro 20 (GPIO_ACTIVE_HIGH)>;
     };
-};
 
-transform: matrix_transform {
+
+    transform: matrix_transform {
         compatible = "zmk,matrix-transform";
         rows = <5>;
         columns = <15>;
@@ -49,3 +49,4 @@ transform: matrix_transform {
                      
         >;
     };
+};
