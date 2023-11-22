@@ -7,14 +7,14 @@
 
         default_layer {
             bindings = <
-                &kp K_PLAY_PAUSE    &kp LEFT_ARROW     &kp RIGHT_ARROW     &mo 1
+                &kp A    &kp A    &kp A    &kp A    &kp A    &kp A                      &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                &kp A    &kp A    &kp A    &kp A    &kp A    &kp A                      &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                &kp A    &kp A    &kp A    &kp A    &kp A    &kp A                      &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
             >;
         }; 
         
-        low_layer {
-            bindings = <
-                &kp K_CONTEXT_MENU     &kp UP_ARROW     &kp DOWN_ARROW     &trans
-            >;
-        };
+       
     };
 };
