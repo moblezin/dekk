@@ -30,3 +30,6 @@
             <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // 010
     };
 };
+
+keys to fix
+* N9
