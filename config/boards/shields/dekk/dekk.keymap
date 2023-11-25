@@ -22,7 +22,7 @@
         lower_layer {
             bindings = <
                 &kp ESC    &kp N1    &kp N2   &kp N3    &kp N4    &kp N5    &none     &none     &kp N6    &kp LT   &kp EQUAL    &kp GT    &kp N0      &kp BSLH        &kp BSPC
-                &kp TAB    &kp Q     &kp W    &kp E     &kp R     &kp T     &none     &none     &kp LBKT  &kp HOME &kp UP       &kp END   &kp LBRC    &kp LBKT        &bootloader
+                &kp TAB    &kp Q     &kp W    &kp E     &kp R     &kp T     &none     &none     &kp LBKT  &kp HOME &kp UP       &kp END   &kp LBRC    &kp LBKT        &none
                 &kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G     &none     &none     &kp LPAR  &kp LEFT &kp DOWN     &kp RIGHT &kp RPAR    &kp APOS        &kp ENTER
                 &kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B     &kp F1    &kp BSPC  &kp N     &kp M    &kp COMMA    &kp DOT   &kp SLASH   &kp K_VOL_UP    &kp K_PLAY_PAUSE
                 &kp GRAVE  &kp F5    &kp LALT &kp LCTRL &kp SPACE &kp LMETA &kp F2    &kp ENTER &none     &kp F6   &kp F7       &kp F8    &kp K_PREV  &kp K_VOL_DOWN  &kp K_NEXT
