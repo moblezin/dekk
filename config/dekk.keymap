@@ -21,7 +21,7 @@
 
         lower_layer {
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3     &kp N4     &kp N5     &none   &none      &kp N6    &kp LT    &kp EQUAL  &kp GT     &kp N0      &kp BSLH      &to 3
+&kp ESC    &to 3   &to 4     &kp N3     &kp N4     &kp N5     &none   &none      &kp N6    &kp LT    &kp EQUAL  &kp GT     &kp N0      &kp BSLH      &kp ESCAPE
 &kp TAB    &kp Q   &kp W     &kp E      &kp R      &kp T      &none   &none      &kp LBKT  &kp HOME  &kp UP     &kp END    &kp LBRC    &kp LBKT      &bootloader
 &kp LCTRL  &kp A   &kp S     &kp D      &kp F      &kp G      &none   &none      &kp LPAR  &kp LEFT  &kp DOWN   &kp RIGHT  &kp RPAR    &kp APOS      &kp ENTER
 &kp LSHFT  &kp Z   &kp X     &kp C      &kp V      &kp B      &kp F1  &kp BSPC   &kp N     &kp M     &kp MINUS  &kp DOT    &kp FSLH    &kp C_VOL_UP  &kp K_PLAY_PAUSE
@@ -46,6 +46,16 @@
 &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &to 0   &trans  &trans  &trans
+            >;
+        };
+
+        mac_layer {
+            bindings = <
+&trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LGUI  &trans  &kp LCTRL  &trans  &trans  &trans  &trans  &trans  &to 0   &trans  &trans  &trans
             >;
         };
     };
