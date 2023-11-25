@@ -33,28 +33,5 @@
 
 keys to fix
 * N9
-
-
-#include <dt-bindings/zmk/keys.h>
-
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-
-        layer_0 {
-            bindings = <
-&kp B   &trans  &trans
-&trans  &trans  &trans
-&trans  &trans  &trans
-            >;
-        };
-
-        layer_1 {
-            bindings = <
-&trans  &trans  &trans
-&trans  &trans  &trans
-&trans  &trans  &trans
-            >;
-        };
-    };
-};
+* u
+* s
