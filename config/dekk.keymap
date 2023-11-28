@@ -7,6 +7,24 @@
 #define RAISE   2
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        chrome_to_klogg_combo {
+            bindings = <&chrome_to_klogg>;
+            key-positions = <8 9>;
+        };
+    };
+
+    macros {
+        chrome_to_klogg: chrome_to_klogg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LC(C) &kp LS(LA(LC(LG(E)))) &kp LC(V)>;
+            label = "CHROME_TO_KLOGG";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
