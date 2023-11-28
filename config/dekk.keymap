@@ -20,7 +20,7 @@
         chrome_to_klogg: chrome_to_klogg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp LC(C) &kp LS(LA(LC(LG(E)))) &kp LC(V)>;
+            bindings = <&kp LC(A) &kp LC(C) &kp LS(LA(LC(LG(E)))) &kp TAB &kp LC(V)>;
             label = "CHROME_TO_KLOGG";
         };
     };
