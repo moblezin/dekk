@@ -14,6 +14,11 @@
             bindings = <&chrome_to_klogg>;
             key-positions = <8 9>;
         };
+
+        console.info {
+            bindings = <&console_info>;
+            key-positions = <56 55>;
+        };
     };
 
     macros {
@@ -26,6 +31,13 @@
                 <&kp TAB &kp LC(V)>;
 
             label = "CHROME_TO_KLOGG";
+        };
+
+        console_info: console_info {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp I &kp N &kp F &kp O &kp LPAR &kp GRAVE &kp D &kp O &kp M &kp L &kp O &kp G &kp POUND &kp POUND &kp POUND &kp SEMI &kp SEMI &kp SEMI &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp GRAVE &kp RPAR &kp SEMI &kp LEFT &kp LEFT &kp LEFT>;
+            label = "CONSOLE_INFO";
         };
     };
 
