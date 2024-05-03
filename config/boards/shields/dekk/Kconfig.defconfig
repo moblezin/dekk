@@ -1,6 +1,6 @@
 if SHIELD_DEKK
 
 config  ZMK_KEYBOARD_NAME
-    default "dekk"
+    default "dekk_mk2"
 
 endif

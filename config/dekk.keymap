@@ -7,79 +7,18 @@
 #define RAISE   2
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        chrome_to_klogg_combo {
-            bindings = <&chrome_to_klogg>;
-            key-positions = <8 9>;
-        };
-    };
-
-    macros {
-        chrome_to_klogg: chrome_to_klogg {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(A) &kp LC(C) &kp LS(LA(LC(LG(E))))>,
-                <&macro_wait_time 100>,
-                <&kp TAB &kp LC(V)>;
-
-            label = "CHROME_TO_KLOGG";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3     &kp N4           &kp N5     &kp C_PLAY_PAUSE       &none          &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp BSLH    &kp BSPC
-&kp TAB    &kp Q   &kp W     &kp E      &kp R            &kp T      &kp C_VOL_UP           &none          &kp Y      &kp U      &kp I      &kp O    &kp P     &kp LBKT    &kp RBKT
-&kp LCTRL  &kp A   &kp S     &kp D      &kp F            &kp G      &kp C_VOL_DN           &none          &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp APOS    &kp ENTER
-&kp LSHFT  &kp Z   &kp X     &kp C      &kp V            &kp B      &kp PRINTSCREEN        &kp LS(LC(M))  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT  &kp C_PLAY_PAUSE
-&kp F13    &kp F5  &kp LALT  &kp LCTRL  &lt RAISE SPACE  &kp LMETA  &kp LS(LA(LC(LG(Z))))  &kp ENTER      &mo LOWER  &kp SPACE  &kp GRAVE  &kp UP   &kp LEFT  &kp DOWN    &kp F14
+&kp ESC    &kp N1  &kp N2    &kp N3     &kp N4     &kp N5      &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS   &kp EQUAL   &kp BSLH    &kp BSPC
+&kp TAB    &kp Q   &kp W     &kp E      &kp R      &kp T       &kp Y      &kp U      &kp I      &kp O     &kp P     &kp LBKT    &kp RBKT    &kp F1       &kp F2
+&kp CAPS   &kp A   &kp S     &kp D      &kp F      &kp G       &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp APOS    &kp ENTER   &kp F3
+&kp LSHFT  &kp Z   &kp X     &kp C      &kp V      &kp B       &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT  &kp UP      &kp C_PLAY_PAUSE
+&kp F4     &kp F5  &kp LCTRL &kp LALT   &LWIN      &kp SPACE   &kp F6     &kp SPACE  &kp GRAVE  &kp RCTRL &kp LEFT  &kp DOWN    &kp RIGHT
             >;
         };
 
-        lower_layer {
-            bindings = <
-&kp ESC    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp N4     &kp N5      &kp C_STOP         &none      &kp N6    &kp LT          &kp EQUAL  &kp GT           &kp N0             &kp BSLH      &kp ESCAPE
-&kp TAB    &to 3         &to 4         &trans        &kp R      &bt BT_CLR  &kp K_SCROLL_UP    &none      &kp LBKT  &kp HOME        &kp UP     &kp END          &kp RIGHT_BRACKET  &none         &bootloader
-&kp LCTRL  &kp A         &kp S         &kp D         &kp F      &kp G       &kp K_SCROLL_DOWN  &none      &kp LPAR  &kp LEFT        &kp DOWN   &kp RIGHT        &kp RPAR           &none         &kp ENTER
-&kp LSHFT  &kp Z         &kp X         &kp C         &kp V      &kp F13     &kp F1             &kp BSPC   &none     &kp LEFT_BRACE  &kp MINUS  &kp RIGHT_BRACE  &kp FSLH           &kp C_VOL_UP  &kp C_PLAY_PAUSE
-&kp GRAVE  &kp F5        &kp LALT      &kp LCTRL     &kp SPACE  &kp LMETA   &kp F2             &kp ENTER  &none     &kp F6          &kp F7     &kp F8           &kp C_PREV         &kp C_VOL_DN  &kp C_NEXT
-            >;
-        };
-
-        raise_layer {
-            bindings = <
-&kp ESC    &kp F1                 &kp F2                 &kp F3                 &kp F4                 &kp F5                 &none   &none      &kp F6  &kp F7  &kp F8   &kp F9  &kp F10   &kp F11     &kp F12
-&kp TAB    &kp LC(LS(LA(LG(Q))))  &kp LC(LS(LA(LG(W))))  &kp LC(LS(LA(LG(E))))  &kp LC(LS(LA(LG(R))))  &kp LC(LS(LA(LG(T))))  &none   &none      &kp Y   &kp N7  &kp N8   &kp N9  &kp P     &kp LBKT    &kp DEL
-&kp LCTRL  &kp LC(LS(LA(LG(A))))  &kp LC(LS(LA(LG(S))))  &kp LC(LS(LA(LG(D))))  &kp LC(LS(LA(LG(F))))  &kp LC(LS(LA(LG(G))))  &none   &none      &kp H   &kp N4  &kp N5   &kp N6  &kp SEMI  &kp APOS    &kp ENTER
-&kp LSHFT  &kp LC(LS(LA(LG(Z))))  &kp LC(LS(LA(LG(X))))  &kp LC(LS(LA(LG(C))))  &kp LC(LS(LA(LG(V))))  &kp LC(LS(LA(LG(B))))  &kp F1  &kp BSPC   &kp N   &kp N1  &kp N2   &kp N3  &kp FSLH  &kp RSHIFT  &kp K_PLAY_PAUSE
-&kp GRAVE  &kp F5                 &kp LALT               &kp LCTRL              &lt RAISE SPACE        &kp LMETA              &kp F2  &kp ENTER  &none   &kp N0  &kp DOT  &none   &kp LEFT  &kp DOWN    &kp RIGHT
-            >;
-        };
-
-        game_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans  &kp LA(LG(PRINTSCREEN))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp SPACE  &trans  &trans                   &trans  &trans  &trans  &trans  &to 0   &trans  &trans  &trans
-            >;
-        };
-
-        mac_layer {
-            bindings = <
-&trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LGUI  &trans  &kp LCTRL  &trans  &trans  &trans  &trans  &trans  &to 0   &trans  &trans  &trans
-            >;
-        };
     };
 };
