@@ -1,2 +1,0 @@
-config SHIELD_DEKK
-    def_bool $(shields_list_contains,dekk)

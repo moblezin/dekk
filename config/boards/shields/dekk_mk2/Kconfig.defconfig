@@ -1,4 +1,4 @@
-if SHIELD_DEKK
+if SHIELD_DEKK_MK2
 
 config  ZMK_KEYBOARD_NAME
     default "dekk_mk2"
