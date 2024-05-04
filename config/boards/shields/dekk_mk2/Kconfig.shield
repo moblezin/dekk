@@ -1,2 +1,2 @@
-config SHIELD_DEKK_MK2
-    def_bool $(shields_list_contains,dekk_mk2)
+config SHIELD_DEKK
+    def_bool $(shields_list_contains,dekk)
