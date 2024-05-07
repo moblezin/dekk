@@ -20,7 +20,7 @@
 
         lower_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp LESS_THAN   &kp EQUAL     &kp GREATER_THAN  &trans                 &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &trans                &kp LESS_THAN   &kp EQUAL     &kp GREATER_THAN  &trans                 &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &kp HOME        &kp UP_ARROW  &kp END           &kp RIGHT_BRACKET      &trans  &trans  &trans  &bootloader
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT        &kp DOWN      &kp RIGHT         &kp RIGHT_PARENTHESIS  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp LEFT_BRACE  &kp MINUS     &kp RIGHT_BRACE   &trans                 &trans  &trans  &trans
