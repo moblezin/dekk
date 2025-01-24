@@ -1,6 +1,6 @@
-if SHIELD_DEKK
+if SHIELD_DEKK_MK4
 
 config  ZMK_KEYBOARD_NAME
-    default "dekk"
+    default "dekk_mk4"
 
 endif
